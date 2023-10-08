@@ -2,7 +2,7 @@ function clima() {
     fetch("https://api.openweathermap.org/data/2.5/weather?q=Buenos Aires&units=metric&lang=es&appid=1b3e082e56decfa222665b2c3eb570aa")
       .then(response => response.json())
       .then(data => {
-        // Obtén la referencia al elemento HTML donde deseas mostrar los datos del clima
+        
         let infoClima = document.getElementById('infoClima');
   
         
