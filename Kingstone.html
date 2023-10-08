@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Kingstone.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.3/build/global/luxon.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1 >KINGSTONE</h1>
+        <img src="./imagenes/rastaman.jpg" alt="rastaman">
+       
+    </footer>
+    </header>
+   
+<main >
+    <div id="chequeoEdad">
+        <label for="">Ingrese su edad</label>
+        <input type="text" id="edad">
+        <button id="btnEdad">Ingresar</button>
+        <div>
+            <p id="mensaje"></p>
+        </div>
+        
+    </div>
+ 
+
+
+
+<br><br>
+    <div>
+        <p>Elija un Genero</p>
+    </div>
+
+<div id="btnSativa">
+    <button > <li>Sativa</li></button>
+</div>
+    <div id="formularioSativa" style="display: none;">
+        <label for=""> Ingrese Nombre de Producto</label>
+        <input type="text" id="inputSativa">
+        <label for="">Ingrese cantidad de gramos </label>
+        <input type="text" id="gramosS">
+        <button id="btnCompraS">Agregar</button>
+        <p id="resultadoSativa" style="display: none;"></p>
+    </div>
+
+
+
+<ul id="listaSativa"></ul>
+
+
+
+
+
+<div id="btnIndica">
+<button > <li>Indica</li></button>
+</div>
+
+<div id="formularioIndica" style="display: none;">
+    <label for=""> Ingrese Nombre de Producto</label>
+    <input type="text" id="inputIndica">
+    <label for="">Ingrese cantidad </label>
+    <input type="text" id="gramosI">
+    <button id="btnCompraI">Agregar</button>
+    <p id="resultadoIndica" style="display: none;"></p>
+</div>
+
+
+<ul id="listaIndica"></ul>
+
+<div  id="btnHibrida">
+<button> <li>Hibrida</li></button>  
+</div>
+
+<div id="formularioHibrida" style="display: none;">
+    <label for=""> Ingrese Nombre de Producto</label>
+    <input type="text" id="inputHibrida">
+    <label for="">Ingrese cantidad </label>
+    <input type="text" id="gramosH">
+    <button id="btnCompraH">Agregar</button>
+    <p id="resultadoHibrida" style="display: none;"></p>
+</div>
+
+<ul id="listaHibrida"></ul>
+
+
+<div class="container" id="carrito">
+    <h2>Carrito</h2>
+    <table class="table table-primary">
+    <thead>
+        <tr>
+        <td></td>       
+        <td>Producto</td>
+        <td>Cantidad</td>
+        <td>Precio</td>
+        <td></td>             
+        </tr>
+    </thead>
+    <tbody id="tbody">
+    
+    </tbody>
+    </table>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+</main>
+
+<footer>
+    <div><p>El clima y el ciclo lunar son muy importantes para tu cultivo</p></div>
+    
+    <div id ="data">
+    <div id="ex1"></div>
+    <div id ="infoClima"></div>
+    </div>
+</footer>
+<script src="./clima.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="sweetalert2.all.min.js"></script>
+<script src="luxon.js"></script>
+
+    <script src="./Kingstone.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
